@@ -139,5 +139,5 @@ pnpm dev
 http://localhost:4100/
 用户名/密码：cmcc/123
 ```
-![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/login.png =400x "login")
-![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/mainpage.png "mainpage"){width=10% height=auto}
+![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/login.png "login")  
+![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/mainpage.png "mainpage")
