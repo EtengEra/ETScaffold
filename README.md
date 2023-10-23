@@ -14,6 +14,21 @@ ETScaffold 统一认证平台脚手架
 [![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/version-1.0.0-brightgreen.svg)](https://gitee.com/eteng/etscaffold)
 
 
+项目介绍
+-----------------------------------
+
+ETScaffold脚手架，提供统一认证服务（ OAuth 2.1 和 OpenID Connect 1.0 规范）、多租户管理、全面的权限系统支持。
+
+
+源码下载
+-----------------------------------
+
+| 源码                | 源码地址                     | 
+|--------------------|------------------------|
+| gitee    | https://gitee.com/eteng/etscaffold.git        |
+| github  | https://github.com/EtengEra/ETScaffold.git |
+
+
 
 # ETScaffold
 
