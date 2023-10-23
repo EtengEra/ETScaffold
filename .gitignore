@@ -1,18 +1,6 @@
 ## ide
 **/.idea
 *.iml
-rebel.xml
-
-## backend
-**/target
-**/logs
-
-## front
-**/*.lock
-
 
 ## Eclipse
 *.project
-*.classpath
-*.settings
-*.factorypath
