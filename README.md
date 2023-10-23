@@ -1,6 +1,6 @@
 
 
-![北京易腾时代科技有限公司](http://www.etena.cn/upload/1/app/1655449673049.jpg "易腾时代")
+![北京易腾时代科技有限公司](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/etena.jpg "易腾时代")
 
 
 
@@ -10,8 +10,8 @@ ETScaffold 统一认证平台脚手架
 当前最新版本： 1.0.0（发布日期：2023-10-23） 
 
 
-[![](https://img.shields.io/badge/Author-北京易腾时代科技-orange.svg)](http://www.etena.cn)
-[![](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://gitee.com/eteng/etscaffold)
+[![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/Author-北京易腾时代科技-orange.svg)](http://www.etena.cn)
+[![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/version-1.0.0-brightgreen.svg)](https://gitee.com/eteng/etscaffold)
 
 
 
