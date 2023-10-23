@@ -168,7 +168,7 @@
 
 ##### 请求体
 
-```http
+```
 /scaffold/callEtCloudUserInfo?_t=1697705279882
 ```
 
@@ -176,7 +176,7 @@
 
 ##### 请求体示例
 
-```JSON
+```
 /scaffold/callEtCloudUserInfo?_t=1697705279882
 
 ```
@@ -497,7 +497,7 @@
 
 #### 请求示例
 
-```HTTP
+```
 oauth2/authorize?response_type=code&client_id=${VITE_OAUTH2_CLIENTID}&scope=${VITE_OAUTH2_SCOPE}&redirect_uri=${VITE_OAUTH2_REDIRECTURI}
 ```
 
@@ -505,7 +505,7 @@ oauth2/authorize?response_type=code&client_id=${VITE_OAUTH2_CLIENTID}&scope=${VI
 
 #### 响应示例
 
-```http
+```
 ${VITE_OAUTH2_REDIRECTURI}?code=CODE
 ```
 
@@ -611,7 +611,7 @@ data相应数据
 
 #### 请求示例
 
-```HTTP
+```
 /oauth/userInfo?token=eyJraWQiOiI3ODRjYWYyNS05NDdiLTRiOTUtOTZjYi0wYTk5OThmNjk0YTAiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJvYXV0aCIsImF1ZCI6Im1lc3NhZ2luZyIsIm5iZiI6MTY4NzkzOTEzOSwic2NvcGUiOlsiYWxsIiwib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vMTkyLjE2OC4wLjI0MToxOTAwMSIsImV4cCI6MTY4NzkzOTQzOSwiaWF0IjoxNjg3OTM5MTM5fQ.HBpp0YfPlube5KCWVIzUYrSYVk0kAmomK16tDjABy83p3HMi38xV4aHG7YhXDxNpF5tNQFT2fqdB6-myABWiW0j4FjvcVdnTYy4Ubm8tL9QJfZfUluE7ucZQdFMEgwtCzH7xFzulKSrv_RdO4HQe3DBuHBCN1tcio_cMAYTKd8FIdBSRzweGgHe1BxLxLMl5-GvbqdRRrmPrWZuCRBtWdiPm5kiGNMbpeddjfRgYXtb4cFi_rYy4Xl5-2xlQEy-4F-lH0X9mhPSuP7bEthEPbBpHKtMgVn5I5KB6-GCWFldqjPu3XcEEgZT11sSRtg1raTyBIOFGrroH-15BtdEl3w
 ```
 
@@ -787,7 +787,7 @@ data相应数据
 1. 在 oauth2_registered_client 表中增加了post_logout_redirect_uris 字段，这个字段用来设置退出登录后需要跳转的页面地址
 2. 在调用完token的注销接口之后，我们需要进行跳转
 
-```Bash
+```
 http://127.0.0.1:19001/oauth2/logout?id_token_hint=${id_token}&post_logout_redirect_uri=${post_logout_redirect_uri}
 ```
 
