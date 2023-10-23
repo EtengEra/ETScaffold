@@ -5,7 +5,7 @@
             <div class="app-loading-dots">
                 <span class="dot dot-spin"><i></i><i></i><i></i><i></i></span>
             </div>
-            <div class="app-loading-title">ETCloud 企业级低代码平台</div>
+            <div class="app-loading-title">ETScaffold 统一认证平台脚手架</div>
         </div>
     </div>
 </template>
