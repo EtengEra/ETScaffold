@@ -1,0 +1,17 @@
+server:
+  port: 8080  
+  servlet:
+    context-path: /etscaffold-system    
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://zj.etena.cn:19001
+        permitUrls: /**/*.html,/**/*.css,/**/*.js,/**/*.png,/**/*.jpg,/**/*.ico
+
+# 脚手架自定义参数
+etscaffold:
+  # 管理中心后端地址
+  etcloudServerUrl: http://zj.etena.cn/etcloud

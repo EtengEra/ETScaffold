@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.etena</groupId>
+  <artifactId>etscaffold-parent</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>ETScaffold ${project.version}</name>
+
+  	<parent>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>2.6.14</version>
+	    <relativePath/>
+	</parent>
+
+	<properties>
+		<etscaffold.version>1.0.0</etscaffold.version>		
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- 微服务 -->
+		<spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+		<alibaba.nacos.version>2.0.4</alibaba.nacos.version>
+        <fastjson.version>1.2.83</fastjson.version>		
+		
+		<!-- 数据库驱动 -->				
+		<mysql-connector-java.version>8.0.27</mysql-connector-java.version>
+		<hutool.version>5.3.8</hutool.version><!-- Java工具类库 -->
+
+		<!-- 持久层 -->
+		<mybatis-plus.version>3.5.1</mybatis-plus.version>
+		<dynamic-datasource-spring-boot-starter.version>3.2.0</dynamic-datasource-spring-boot-starter.version><!-- 快速集成多数据源的启动器 -->
+		<druid.version>1.1.22</druid.version>
+		<minidao.version>1.9.0</minidao.version><!-- 持久层框架 -->
+		
+		<commons.version>2.6</commons.version>
+		<commons-beanutils.version>1.9.4</commons-beanutils.version>
+		
+		<!-- Log4j2爆雷漏洞 -->
+		<log4j2.version>2.17.0</log4j2.version>
+		<logback.version>1.2.9</logback.version>
+	</properties>
+
+	<modules>		    
+        <module>etscaffold-module-system</module>
+	</modules>
+
+	<repositories>
+		<repository>
+            <id>aliyun</id>
+            <name>aliyun Repository</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+        </repository>
+	</repositories>
+
+	<dependencies>		
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- spring-cloud-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- spring-cloud-alibaba -->
+			<dependency>
+				<groupId>com.alibaba.cloud</groupId>
+				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			
+			<!-- etscaffold system 模块-->
+			<dependency>
+				<groupId>cn.etena</groupId>
+				<artifactId>etscaffold-system-biz</artifactId>
+				<version>${etscaffold.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<!-- 指定JDK编译版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- 打包跳过测试 -->
+            <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-surefire-plugin</artifactId>
+		        <configuration>
+		          <skipTests>true</skipTests>
+		        </configuration>
+	        </plugin>
+	         <!-- 避免font文件的二进制文件格式压缩破坏 -->
+	         <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+				 <version>3.1.0</version>
+                <configuration>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>woff2</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>eot</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>svg</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                </configuration>
+            </plugin>
+		</plugins>
+		<resources>
+			<resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.json</include>
+					<include>**/*.ftl</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>		
+    
+</project>

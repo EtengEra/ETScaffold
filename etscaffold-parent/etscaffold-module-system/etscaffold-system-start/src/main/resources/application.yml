@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: etscaffold-system
+  profiles:
+    active: dev
