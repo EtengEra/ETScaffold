@@ -28,6 +28,12 @@ ETScaffold脚手架，提供统一认证服务（ OAuth 2.1 和 OpenID Connect 1
 | gitee    | https://gitee.com/eteng/etscaffold.git        |
 | github  | https://github.com/EtengEra/ETScaffold.git |
 
+##### 项目说明
+
+| 项目名                | 说明                     | 
+|--------------------|------------------------|
+| `etscaffold-parent`    | SpringBoot后台源码（支持微服务）        |
+| `etscaffold-vue3` | Vue3+TS 前端源码 |
 
 
 # ETScaffold
