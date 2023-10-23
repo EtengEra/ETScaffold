@@ -1,10 +1,10 @@
 {
-  "name": "etcloud-vue3",
-  "version": "3.4.4",
+  "name": "etscaffold-vue3",
+  "version": "1.0.0",
   "author": {
-    "name": "jeecg",
-    "email": "jeecgos@163.com",
-    "url": "https://github.com/jeecgboot/jeecgboot-vue3"
+    "name": "eteng",
+    "email": "hjx@etena.cn",
+    "url": "https://gitee.com/eteng/etscaffold"
   },
   "scripts": {
     "bootstrap": "pnpm install",
