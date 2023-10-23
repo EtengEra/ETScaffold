@@ -49,8 +49,8 @@ ETScaffold脚手架，提供统一认证服务（ OAuth 2.1 和 OpenID Connect 1
 * 配置管理中心后端地址：http://zj.etena.cn/etcloud  
 &emsp;![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/etcloudserver.png "etcloud-server")
 
-##### 2.启动SpringBoot应用，运行ETScaffoldSystemApplication
-
+##### 2.启动后端应用
+* 启动SpringBoot应用，运行ETScaffoldSystemApplication
 
 #### 前端环境
 
