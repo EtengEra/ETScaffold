@@ -60,7 +60,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       // Load proxy configuration from .env
       proxy:{
         '/auth':{
-          target:'http://192.168.0.241:10001',          
+          target:'http://zj.etena.cn',          
           changeOrigin: true,
         },
         '/scaffold':{          
