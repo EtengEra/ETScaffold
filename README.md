@@ -28,12 +28,34 @@ ETScaffold脚手架，提供统一认证服务（ OAuth 2.1 和 OpenID Connect 1
 | gitee    | https://gitee.com/eteng/etscaffold.git        |
 | github  | https://github.com/EtengEra/ETScaffold.git |
 
-##### 项目说明
+#### 项目说明
 
 | 项目名                | 说明                     | 
 |--------------------|------------------------|
 | `etscaffold-parent`    | SpringBoot后台源码（支持微服务）        |
 | `etscaffold-vue3` | Vue3+TS 前端源码 |
+
+
+使用说明
+-----------------------------------
+
+#### 后端环境
+
+1.  application-dev.yml配置
+![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/oauth-server.png "oauth-server")
+配置oauth-server地址：http://zj.etena.cn:19001
+![](https://eteng.oss-cn-qingdao.aliyuncs.com/git/images/etcloudserver.png "etcloudserver")
+配置管理中心后端地址：http://zj.etena.cn/etcloud
+2.  启动SpringBoot应用，运行ETScaffoldSystemApplication
+
+
+#### 前端环境
+
+1.  xxxx
+2.  xxxx
+3.  xxxx
+
+
 
 
 # ETScaffold
